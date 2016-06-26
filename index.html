@@ -2,11 +2,20 @@
 
 <html>
 
-<html class="ui-mobile"><head><base href="http://ququplay.github.io/jquery-mobile-flat-ui-theme/">
+	<html class="ui-mobile"><head><base href="http://ququplay.github.io/jquery-mobile-flat-ui-theme/">
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  	<link href="css/swatches.css" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure.custom.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.internal-png.css">
+  
   
   <script src="js/jquery.min.js"></script><style type="text/css"></style>
   <script src="js/jquery.mobile-1.3.1.min.js"></script>
@@ -14,6 +23,7 @@
 <title></title>
 
 <link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" type="text/css">
+
 
 
 <!-- Scripts -->
@@ -32,13 +42,23 @@
   
   <div data-role="page" data-url="/jquery-mobile-flat-ui-theme/" tabindex="0" class="ui-page ui-page-panel ui-page-active ui-body-c" style="min-height: 1952px;">
 
-  <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push" class="ui-panel ui-panel-position-right ui-panel-display-push ui-body-a ui-panel-animate ui-panel-closed">
+  <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="overlay" class="ui-panel ui-panel-position-right ui-panel-display-push ui-body-a ui-panel-animate ui-panel-closed">
 			<div class="ui-panel-page-content-position-right" >
-            <ul>
-  				<li class="ui-btn-text">Coffee</li>
-  				<li class="ui-btn-text">Tea</li>
-  				<li class="ui-btn-text">Milk</li>
-			</ul>
+<!-- header -->
+
+
+<!-- content -->
+<div class="panel-content">
+	 <ul>
+      <li class="ui-li-static"><a href="#"  data-role="button" data-theme="a" data-icon="home" data-inline="true">Main</a></li>
+      <li class="ui-li-static"><a href="#"  data-role="button" data-theme="a" data-icon="search" data-inline="true">Customers</a></li>
+      <li class="ui-li-static"><a href="#"  data-role="button" data-theme="a" data-icon="star" data-inline="true">Weather</a></li>
+      <li class="ui-li-static"><a href="#"  data-role="button" data-theme="a" data-icon="info" data-inline="true">Calendar</a></li>
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Close panel</a>
+     </ul>
+    </div>
+<!-- footer -->
+            
             </div>
  </div>
 
@@ -52,7 +72,7 @@
       
       
     <h1 class="ui-title" role="heading" aria-level="1">Window Clean Me</h1>
-     <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" title="">
+     <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" title="MENU">
      <span class="ui-btn-inner">
      <span class="ui-btn-text"></span>
      <span class="ui-icon ui-icon-flat-menu ui-icon-shadow">&nbsp;</span>
@@ -61,18 +81,22 @@
      </a>
     
     
-    </div><div data-role="content" role="main" class="ui-content">
-      <p>Sample text and <a href="#" class="ui-link">links</a>.</p>
+    </div>
+    
+    <div data-role="content" role="main" class="ui-content">
+      <div data-role="content" role="img" class="responsive_images"><img src="images/Windows.jpg" alt="Window Cleaner">
+      </div>
+    </div>
       
       <fieldset class="ui-grid-a">
       
         
         <div class="ui-block-a">
         
-        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flat-settings" data-theme="a" data-disabled="false" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-icon-left" aria-disabled="false">
+        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flat-man" data-theme="a" data-disabled="false" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-icon-left" aria-disabled="false">
         <span class="ui-btn-inner">
         <span class="ui-btn-text">Customers</span>
-        <span class="ui-icon ui-icon-flat-settings ui-icon-shadow">&nbsp;</span>
+        <span class="ui-icon ui-icon-flat-man ui-icon-shadow">&nbsp;</span>
         </span>
         </div>
         </div>
@@ -93,19 +117,19 @@
         
         <div class="ui-block-a">
         
-        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flat-settings" data-theme="c" data-disabled="false" class="ui-btn ui-btn-up-c ui-shadow ui-btn-corner-all ui-btn-icon-left" aria-disabled="false">
+        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flat-time" data-theme="c" data-disabled="false" class="ui-btn ui-btn-up-c ui-shadow ui-btn-corner-all ui-btn-icon-left" aria-disabled="false">
         <span class="ui-btn-inner">
         <span class="ui-btn-text">Weather</span>
-        <span class="ui-icon ui-icon-flat-settings ui-icon-shadow">&nbsp;</span>
+        <span class="ui-icon ui-icon-flat-time ui-icon-shadow">&nbsp;</span>
         </span>
         </div>
         </div>
         <div class="ui-block-b">
         
-        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flat-new" data-theme="d" data-disabled="false" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-left ui-btn-up-d" aria-disabled="false">
+        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="flat-calendar" data-theme="d" data-disabled="false" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-left ui-btn-up-d" aria-disabled="false">
         <span class="ui-btn-inner">
         <span class="ui-btn-text">Calendar</span>
-        <span class="ui-icon ui-icon-flat-new ui-icon-shadow">&nbsp;</span>
+        <span class="ui-icon ui-icon-flat-calendar ui-icon-shadow">&nbsp;</span>
         </span>
         
         </div>
