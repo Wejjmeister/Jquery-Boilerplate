@@ -2,3 +2,12 @@
 	jQuery Mobile Boilerplate
 	css/custom.css
 */
+
+.responsive_images {
+    width: 100%;
+    height: auto;
+}
+
+body {
+	height:inherit;
+}
